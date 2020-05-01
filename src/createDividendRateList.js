@@ -30,9 +30,6 @@ const delayedLog = async (stock) => {
 
   const message = `${name}(${symbol}, ${dividendType}(${recentDividendMonth})): ${cuttentDividendRate}%($${recentPrice})`;
 
-  //console.log("createDividendRateList -> message", message);
-  //sleep(60000);
-  //await delay();
   return message;
 };
 
@@ -56,12 +53,6 @@ const dividendRate = async (symbol) => {
     symbol
   );
 
-  //let monthly = null;
-  /*
-  const delaymonthly = () => {
-    return new Promise((resolve) => {
-      setTimeout(async function () {
-        */
   const monthly = await axios
     .get(monthlyUrl)
     .then((res) => {
@@ -70,21 +61,9 @@ const dividendRate = async (symbol) => {
     .catch((e) => {
       console.log("error", e);
     });
-  /*
-        resolve();
-      }, 15000);
-    });
-  };
-  await delaymonthly();
-*/
+
   const dailyUrl = createAlphavantageUrl(TIME_SERIES_DAILY, symbol);
 
-  //let daily = null;
-  /*
-  const delaydaily = () => {
-    return new Promise((resolve) => {
-      setTimeout(async function () {
-        */
   const daily = await axios
     .get(dailyUrl)
     .then((res) => {
@@ -93,13 +72,6 @@ const dividendRate = async (symbol) => {
     .catch((e) => {
       console.log("error", e);
     });
-  /*
-        resolve();
-      }, 15000);
-    });
-  };
-  await delaydaily();
-*/
 
   let dateKey = null;
   if (dateKey == null) {
@@ -152,10 +124,6 @@ const dividendRate = async (symbol) => {
   //console.log("dividendRate -> recentPrice", recentPrice);
 
   if (dividendType != "no-dividend") {
-    //console.log("dividendRate -> dividendType", dividendType);
-
-    //console.log("dividendRate -> totalDividend", totalDividend);
-
     const cuttentDividendRate = ((totalDividend / recentPrice) * 100).toFixed(
       2
     );

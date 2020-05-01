@@ -1,11 +1,13 @@
 import axios from "axios";
 
 export const sendStockDividendReportEmail = async (Message) => {
+  const today = new Date();
+
   var postData = {
     personalizations: [
       {
         to: [{ email: "dnfvnsxn@naver.com", name: "JuHyun Yu" }],
-        subject: "Stock Dividend Report",
+        subject: `Stock Dividend Report[${today.toLocaleDateString()}]`,
       },
     ],
     content: [{ type: "text/html", value: Message }],
