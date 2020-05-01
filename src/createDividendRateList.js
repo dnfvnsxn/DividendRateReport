@@ -116,7 +116,7 @@ const dividendRate = async (symbol) => {
     dividendType = "no-dividend";
   }
 
-  const recentday = daily["Meta Data"]["3. Last Refreshed"];
+  const recentday = daily["Meta Data"]["3. Last Refreshed"].substring(0, 10);
   const recentPrice = parseFloat(
     daily["Time Series (Daily)"][recentday]["4. close"]
   );
