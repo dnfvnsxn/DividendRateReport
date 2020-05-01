@@ -3,21 +3,6 @@ export const portfolio = [
     name: "애플",
     symbol: "AAPL",
   },
-];
-
-export const interests = [
-  {
-    name: "마스터카드",
-    symbol: "MA",
-  },
-];
-
-/*
-export const portfolio = [
-  {
-    name: "애플",
-    symbol: "AAPL",
-  },
   {
     name: "애브비",
     symbol: "ABBV",
@@ -98,4 +83,3 @@ export const interests = [
     symbol: "AVGO",
   },
 ];
-*/
