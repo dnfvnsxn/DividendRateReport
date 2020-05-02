@@ -8,20 +8,12 @@ export const portfolio = [
     symbol: "ABBV",
   },
   {
-    name: "월트디즈니",
-    symbol: "DIS",
-  },
-  {
     name: "EPR프라퍼티스",
     symbol: "EPR",
   },
   {
     name: "IBM",
     symbol: "IBM",
-  },
-  {
-    name: "로스",
-    symbol: "ROST",
   },
   {
     name: "리얼티인컴",
@@ -177,5 +169,13 @@ export const interests = [
   {
     name: "스타벅스",
     symbol: "SBUX",
+  },
+  {
+    name: "월트디즈니",
+    symbol: "DIS",
+  },
+  {
+    name: "로스",
+    symbol: "ROST",
   },
 ];
