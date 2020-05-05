@@ -286,4 +286,16 @@ export const interests = [
     name: "엔비디아",
     symbol: "NVDA",
   },
+  {
+    name: "서던",
+    symbol: "SO",
+  },
+  {
+    name: "킨더 모건",
+    symbol: "KMI",
+  },
+  {
+    name: "매트라이프",
+    symbol: "MET",
+  },
 ];
