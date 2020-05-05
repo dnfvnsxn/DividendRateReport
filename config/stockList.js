@@ -1,5 +1,13 @@
 export const portfolio = [
   {
+    name: "EPR프라퍼티스",
+    symbol: "EPR",
+  },
+  {
+    name: "리얼티인컴",
+    symbol: "O",
+  },
+  {
     name: "애플",
     symbol: "AAPL",
   },
@@ -7,17 +15,10 @@ export const portfolio = [
     name: "애브비",
     symbol: "ABBV",
   },
-  {
-    name: "EPR프라퍼티스",
-    symbol: "EPR",
-  },
+
   {
     name: "IBM",
     symbol: "IBM",
-  },
-  {
-    name: "리얼티인컴",
-    symbol: "O",
   },
   {
     name: "화이자",

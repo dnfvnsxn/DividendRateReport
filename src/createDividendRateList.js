@@ -103,7 +103,7 @@ const dividendRate = async (symbol) => {
 
   //console.log("dividendRate -> dividendCnt", dividendCnt);
 
-  if (dividendCnt >= 23) {
+  if (dividendCnt >= 22) {
     dividendType = "monthly";
     totalDividend = parseFloat(dividend[0].price) * 12;
   } else if (dividendCnt >= 7) {
