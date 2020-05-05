@@ -10,6 +10,8 @@ export const createDividendRateList = async (stockList) => {
   for (let stock of stockList) {
     const message = await delayedLog(stock);
 
+    console.log(message);
+
     fullMessage.push(message);
     await delay();
   }
@@ -75,7 +77,7 @@ const dividendRate = async (symbol) => {
 
   let dateKey = null;
   if (dateKey == null) {
-    dateKey = Object.keys(monthly).splice(1, 12);
+    dateKey = Object.keys(monthly).splice(1, 24);
     //console.log("dividendRate -> monthlyKey", dateKey);
   }
 
@@ -83,6 +85,7 @@ const dividendRate = async (symbol) => {
 
   dateKey.map((date) => {
     const price = monthly[date]["7. dividend amount"];
+    //console.log("dividendRate -> price", price);
 
     if (price != "0.0000") {
       const obj = {
@@ -100,13 +103,13 @@ const dividendRate = async (symbol) => {
 
   //console.log("dividendRate -> dividendCnt", dividendCnt);
 
-  if (dividendCnt >= 12) {
+  if (dividendCnt >= 23) {
     dividendType = "monthly";
     totalDividend = parseFloat(dividend[0].price) * 12;
-  } else if (dividendCnt >= 4) {
+  } else if (dividendCnt >= 7) {
     dividendType = "quarterly";
     totalDividend = parseFloat(dividend[0].price) * 4;
-  } else if (dividendCnt >= 2) {
+  } else if (dividendCnt >= 3) {
     dividendType = "semi-annually";
     totalDividend = parseFloat(dividend[0].price) * 2;
   } else if (dividendCnt >= 1) {
