@@ -15,7 +15,10 @@ export const portfolio = [
     name: "애브비",
     symbol: "ABBV",
   },
-
+  {
+    name: "알트리아",
+    symbol: "MO",
+  },
   {
     name: "IBM",
     symbol: "IBM",
@@ -31,6 +34,10 @@ export const portfolio = [
   {
     name: "퀄컴",
     symbol: "QCOM",
+  },
+  {
+    name: "메인스트리트캐피탈 ",
+    symbol: "MAIN",
   },
   {
     name: "AT&T",
@@ -232,10 +239,6 @@ export const interests = [
     symbol: "MRK",
   },
   {
-    name: "알트리아",
-    symbol: "MO",
-  },
-  {
     name: "월마트",
     symbol: "WMT",
   },
@@ -258,10 +261,6 @@ export const interests = [
   {
     name: "비자",
     symbol: "V",
-  },
-  {
-    name: "메인스트리트캐피탈 ",
-    symbol: "MAIN",
   },
   {
     name: "엑슨모빌",
@@ -299,4 +298,48 @@ export const interests = [
     name: "존슨앤존슨",
     symbol: "JNJ",
   },
+  {
+    name: "골드만삭스",
+    symbol: "GS",
+  },
+  {
+    name: "노스럽그루먼",
+    symbol: "NOC",
+  },
+  {
+    name: "타이슨푸드",
+    symbol: "TSN",
+  },
+  {
+    name: "켈로그",
+    symbol: "K",
+  },
+  {
+    name: "블랙락",
+    symbol: "BLK",
+  },
+  {
+    name: "길리어드",
+    symbol: "GILD",
+  },
+  {
+    name: "크라운캐슬",
+    symbol: "CCI",
+  },
+  {
+    name: "디지털리얼티",
+    symbol: "DLR",
+  },
+  {
+    name: "필립모리스",
+    symbol: "PM",
+  },
+  {
+    name: "먼델리즈",
+    symbol: "MDLZ",
+  },
+  {
+    name: "컴캐스트",
+    symbol: "CMCSA",
+  }
 ];
