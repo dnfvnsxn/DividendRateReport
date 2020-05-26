@@ -36,6 +36,10 @@ export const portfolio = [
     symbol: "QCOM",
   },
   {
+    name: "브로드컴",
+    symbol: "AVGO",
+  },
+  {
     name: "메인스트리트캐피탈 ",
     symbol: "MAIN",
   },
@@ -225,10 +229,6 @@ export const interests = [
   {
     name: "뱅크오브아메리카",
     symbol: "BAC",
-  },
-  {
-    name: "브로드컴",
-    symbol: "AVGO",
   },
   {
     name: "나이키",
