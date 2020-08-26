@@ -1,9 +1,5 @@
 export const portfolio = [
   {
-    name: "EPR프라퍼티스",
-    symbol: "EPR",
-  },
-  {
     name: "리얼티인컴",
     symbol: "O",
   },
@@ -36,6 +32,10 @@ export const portfolio = [
     symbol: "QCOM",
   },
   {
+    name: "브로드컴",
+    symbol: "AVGO",
+  },
+  {
     name: "메인스트리트캐피탈 ",
     symbol: "MAIN",
   },
@@ -46,6 +46,10 @@ export const portfolio = [
   {
     name: "스포티파이테크놀로지",
     symbol: "SPOT",
+  },
+  {
+    name: "워너뮤직",
+    symbol: "WMG",
   },
 ];
 
@@ -225,10 +229,6 @@ export const interests = [
   {
     name: "뱅크오브아메리카",
     symbol: "BAC",
-  },
-  {
-    name: "브로드컴",
-    symbol: "AVGO",
   },
   {
     name: "나이키",
