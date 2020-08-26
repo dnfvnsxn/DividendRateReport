@@ -6,7 +6,7 @@ export const sendStockDividendReportEmail = async (Message) => {
   var postData = {
     personalizations: [
       {
-        to: [{ email: "dnfvnsxn@naver.com", name: "JuHyun Yu" }],
+        to: [{ email: "dnfvnsxn@kakao.com", name: "JuHyun Yu" }],
         subject: `Stock Dividend Report[${today.toLocaleDateString()}]`,
       },
     ],
