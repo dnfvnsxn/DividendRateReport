@@ -45,7 +45,7 @@ const createAlphavantageUrl = (timeSeries, symbol) => {
 
   const fullUrl = `${BASE_URL_ALPHAADVANTAGE}?function=${timeSeries}&symbol=${symbol}&apikey=${key}`;
 
-  //console.log("createAlphavantageUrl -> fullUrl", fullUrl);
+  console.log("createAlphavantageUrl -> fullUrl", fullUrl);
   return fullUrl;
 };
 
@@ -131,10 +131,14 @@ const dividendRate = async (symbol) => {
       2
     );
     //console.log("dividendRate -> cuttentDividendRate", cuttentDividendRate);
+    //console.log("dividendRate -> dividend", dividend);
 
-    const recentDividendMonth = `${dividend[0].date.split("-")[1]}, ${
-      dividend[1].date.split("-")[1]
-    }`;
+    const recentOneDividendMonth = dividend[0].date.split("-")[1];
+
+    const recentTwoDividendMonth =
+      dividend.length > 1 ? dividend[1].date.split("-")[1] : "no-dividend";
+
+    const recentDividendMonth = `${recentOneDividendMonth}, ${recentTwoDividendMonth}`;
 
     const result = {
       dividendType,
