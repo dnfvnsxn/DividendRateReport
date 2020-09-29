@@ -44,6 +44,10 @@ export const portfolio = [
     symbol: "T",
   },
   {
+    name: "엔비디아",
+    symbol: "NVDA",
+  },
+  {
     name: "스포티파이테크놀로지",
     symbol: "SPOT",
   },
@@ -185,10 +189,6 @@ export const interests = [
   {
     name: "LBrands",
     symbol: "LB",
-  },
-  {
-    name: "엔비디아",
-    symbol: "NVDA",
   },
   {
     name: "서던",
