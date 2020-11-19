@@ -55,6 +55,10 @@ export const portfolio = [
     name: "워너뮤직",
     symbol: "WMG",
   },
+  {
+    name: "엑슨모빌",
+    symbol: "XOM",
+  },
 ];
 
 export const interests = [
@@ -261,10 +265,6 @@ export const interests = [
   {
     name: "비자",
     symbol: "V",
-  },
-  {
-    name: "엑슨모빌",
-    symbol: "XOM",
   },
   {
     name: "애보트래버라토리",
