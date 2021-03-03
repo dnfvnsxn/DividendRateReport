@@ -67,7 +67,6 @@ export const portfolio = [
     name: "비아트리스",
     symbol: "vtrs",
   },
-
 ];
 
 export const interests = [
